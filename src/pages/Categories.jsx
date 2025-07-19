@@ -1,88 +1,16 @@
-import React, { useState, useEffect } from "react";
+import { categories } from "@/data/categories";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Recipe } from "@/entities/Recipe";
 import { Search, ChefHat, Clock, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 
-export default function Categories() {
+function Categories() {
   const [recipes, setRecipes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
-
-  const categories = [
-    { 
-      name: "breakfast", 
-      label: "Breakfast", 
-      icon: "🥞", 
-      color: "from-orange-400 to-red-400",
-      description: "Start your day right"
-    },
-    { 
-      name: "lunch", 
-      label: "Lunch", 
-      icon: "🥗", 
-      color: "from-green-400 to-teal-400",
-      description: "Midday delights"
-    },
-    { 
-      name: "dinner", 
-      label: "Dinner", 
-      icon: "🍽️", 
-      color: "from-purple-400 to-indigo-400",
-      description: "Evening feasts"
-    },
-    { 
-      name: "dessert", 
-      label: "Dessert", 
-      icon: "🍰", 
-      color: "from-pink-400 to-rose-400",
-      description: "Sweet endings"
-    },
-    { 
-      name: "snack", 
-      label: "Snacks", 
-      icon: "🍪", 
-      color: "from-yellow-400 to-orange-400",
-      description: "Quick bites"
-    },
-    { 
-      name: "appetizer", 
-      label: "Appetizers", 
-      icon: "🥨", 
-      color: "from-blue-400 to-cyan-400",
-      description: "Perfect starters"
-    },
-    { 
-      name: "main_course", 
-      label: "Main Course", 
-      icon: "🍖", 
-      color: "from-red-400 to-pink-400",
-      description: "Hearty meals"
-    },
-    { 
-      name: "salad", 
-      label: "Salads", 
-      icon: "🥙", 
-      color: "from-green-400 to-emerald-400",
-      description: "Fresh & healthy"
-    },
-    { 
-      name: "soup", 
-      label: "Soups", 
-      icon: "🍲", 
-      color: "from-orange-400 to-amber-400",
-      description: "Warm comfort"
-    },
-    { 
-      name: "beverage", 
-      label: "Beverages", 
-      icon: "🥤", 
-      color: "from-blue-400 to-purple-400",
-      description: "Refreshing drinks"
-    }
-  ];
-
+  
   useEffect(() => {
     loadRecipes();
   }, []);
@@ -183,7 +111,9 @@ export default function Categories() {
                   >
                     <Link to={createPageUrl(`Recipes?category=${category.name}`)}>
                       <div className="text-center space-y-4">
-                        <div className="text-5xl mb-3">{category.icon}</div>
+                        <div className="text-5xl mb-3">
+                          <img src={category.image} alt={category.label} className="w-full h-64" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-800 group-hover:text-brand-600 transition-colors">
                           {category.label}
                         </h3>
@@ -232,7 +162,9 @@ export default function Categories() {
                   >
                     <Link to={createPageUrl(`Recipes?category=${category.name}`)}>
                       <div className="space-y-3">
-                        <div className="text-4xl mb-3">{category.icon}</div>
+                        <div className="text-4xl mb-3">
+                          <img src={category.image} alt={category.label} className="w-full h-44" />
+                        </div>
                         <h3 className="font-bold text-gray-800 group-hover:text-brand-600 transition-colors">
                           {category.label}
                         </h3>
@@ -271,3 +203,6 @@ export default function Categories() {
     </div>
   );
 }
+
+
+export default Categories;
