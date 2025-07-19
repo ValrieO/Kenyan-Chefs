@@ -17,19 +17,19 @@ const Header = () => {
 
           <nav className="hidden md:flex space-x-8">
             <Link
-              to={createPageUrl("Landing")}
+              to='/'
               className="hover:text-[#68BBE3] transition-colors"
             >
               Home
             </Link>
             <Link
-              to={createPageUrl("Recipes")}
+              to='/recipes'
               className="hover:text-[#68BBE3] transition-colors"
             >
               Recipes
             </Link>
             <Link
-              to={createPageUrl("Categories")}
+              to='/categories'
               className="hover:text-[#68BBE3] transition-colors"
             >
               Categories
@@ -46,12 +46,13 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-[#0E86D4] hover:bg-[#055C9D] px-4 py-2 rounded-lg transition-colors">
+            <Link to="/signup" className="bg-[#0E86D4] hover:bg-[#055C9D] px-4 py-2 rounded-lg transition-colors"
+            >
               Sign Up
-            </button>
-            <button className="border border-[#0E86D4] text-[#0E86D4] hover:bg-[#0E86D4] hover:text-white px-4 py-2 rounded-lg transition-colors">
+            </Link>
+            <Link to="/login" className="border border-[#0E86D4] text-[#0E86D4] hover:bg-[#0E86D4] hover:text-white px-4 py-2 rounded-lg transition-colors">
               Log In
-            </button>
+            </Link>
           </div>
 
           <button

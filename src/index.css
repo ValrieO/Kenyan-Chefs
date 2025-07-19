@@ -22,62 +22,62 @@
   }
 }
 
-:root {
-  --brand-50: #f0f9ff;
-  --brand-100: #e0f2fe;
-  --brand-200: #bae6fd;
-  --brand-300: #7dd3fc;
-  --brand-400: #38bdf8;
-  --brand-500: #2e8bc0;
-  --brand-600: #145da0;
-  --brand-700: #0c2d48;
-  --brand-800: #075985;
-  --brand-900: #0c4a6e;
-}
-
-.neumorphic {
-  box-shadow: 8px 8px 16px rgba(163, 177, 198, 0.6),
-    -8px -8px 16px rgba(255, 255, 255, 0.5);
-}
-
-.neumorphic-inset {
-  box-shadow: inset 8px 8px 16px rgba(163, 177, 198, 0.6),
-    inset -8px -8px 16px rgba(255, 255, 255, 0.5);
-}
-
-.neumorphic-soft {
-  box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.4),
-    -4px -4px 8px rgba(255, 255, 255, 0.3);
-}
-
-.neumorphic-button {
-  box-shadow: 6px 6px 12px rgba(163, 177, 198, 0.5),
-    -6px -6px 12px rgba(255, 255, 255, 0.4);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.neumorphic-button:hover {
-  box-shadow: 10px 10px 20px rgba(163, 177, 198, 0.6),
-    -10px -10px 20px rgba(255, 255, 255, 0.5);
-  transform: translateY(-2px);
-}
-
-.neumorphic-button:active {
-  box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.5),
-    inset -4px -4px 8px rgba(255, 255, 255, 0.4);
-  transform: translateY(0);
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, var(--brand-600), var(--brand-400));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.brand-shadow {
-  box-shadow: 0 20px 40px rgba(46, 139, 192, 0.15);
-}
+ :root {
+          --brand-50: #f0f9ff;
+          --brand-100: #e0f2fe;
+          --brand-200: #bae6fd;
+          --brand-300: #7dd3fc;
+          --brand-400: #38bdf8;
+          --brand-500: #2E8BC0;
+          --brand-600: #145DA0;
+          --brand-700: #0C2D48;
+          --brand-800: #075985;
+          --brand-900: #0c4a6e;
+        }
+        
+        .neumorphic {
+          box-shadow: 8px 8px 16px rgba(163, 177, 198, 0.6), 
+                      -8px -8px 16px rgba(255, 255, 255, 0.5);
+        }
+        
+        .neumorphic-inset {
+          box-shadow: inset 8px 8px 16px rgba(163, 177, 198, 0.6), 
+                      inset -8px -8px 16px rgba(255, 255, 255, 0.5);
+        }
+        
+        .neumorphic-soft {
+          box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.4), 
+                      -4px -4px 8px rgba(255, 255, 255, 0.3);
+        }
+        
+        .neumorphic-button {
+          box-shadow: 6px 6px 12px rgba(163, 177, 198, 0.5), 
+                      -6px -6px 12px rgba(255, 255, 255, 0.4);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .neumorphic-button:hover {
+          box-shadow: 10px 10px 20px rgba(163, 177, 198, 0.6), 
+                      -10px -10px 20px rgba(255, 255, 255, 0.5);
+          transform: translateY(-2px);
+        }
+        
+        .neumorphic-button:active {
+          box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.5), 
+                      inset -4px -4px 8px rgba(255, 255, 255, 0.4);
+          transform: translateY(0);
+        }
+        
+        .gradient-text {
+          background: linear-gradient(135deg, var(--brand-600), var(--brand-400));
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        .brand-shadow {
+          box-shadow: 0 20px 40px rgba(46, 139, 192, 0.15);
+        }
 
 @layer utilities {
   /* Animation utilities using Tailwind's keyframes and animation classes */

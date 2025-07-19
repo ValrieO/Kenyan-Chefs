@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Recipe } from "@/entities/Recipe";
 import {
   Heart,
   Clock,
@@ -16,6 +15,8 @@ import { featuredRecipes } from "@/data/featuredRecipes.js";
 import { motion } from "framer-motion";
 import Header from "@/components/common/Header";
 import BackgroundImg from "@/assets/images/Background.png";
+import headerImage from '../assets/images/fried-chicken-breast-with-vegetables.jpg';
+
 
 function Landing() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -294,7 +295,7 @@ function Landing() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop"
+                  src={headerImage}
                   alt="Kenyan cooking"
                   className="rounded-2xl shadow-lg"
                 />
