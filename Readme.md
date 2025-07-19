@@ -32,6 +32,7 @@
     followersCount: Number,
     followingCount: Number
   },
+  
   stats: {
     recipesCount: Number,
     likesReceived: Number,

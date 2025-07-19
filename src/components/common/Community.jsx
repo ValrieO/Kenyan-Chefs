@@ -1,4 +1,50 @@
-// Community Post Component
+const communityPosts = [
+  {
+    id: 1,
+    title: "Mukimo wa Kienyeji",
+    author: "Catherine Njeri",
+    avatar: "/api/placeholder/40/40",
+    image: "/api/placeholder/250/180",
+    description: "I love to use my mother's Mukimo recipe to connect with my roots. Every time I make it, it feels like getting a warm hug from home.",
+    likes: 42,
+    shares: 8,
+    time: "2 hours ago"
+  },
+  {
+    id: 2,
+    title: "Tilapia wa Nazi",
+    author: "Ali Mwangi",
+    avatar: "/api/placeholder/40/40",
+    image: "/api/placeholder/250/180",
+    description: "The flavors from Lake Victoria! Nothing beats a whole chicken, beef curry, or fish cooked the way my grandmother taught me.",
+    likes: 38,
+    shares: 12,
+    time: "4 hours ago"
+  },
+  {
+    id: 3,
+    title: "Mandazi za Asali",
+    author: "Fatuma Said",
+    avatar: "/api/placeholder/40/40",
+    image: "/api/placeholder/250/180",
+    description: "My grandma from Lamu taught me this recipe. The honey gives it that special sweetness that makes it unique.",
+    likes: 56,
+    shares: 15,
+    time: "6 hours ago"
+  },
+  {
+    id: 4,
+    title: "Chapati za Ufuta",
+    author: "Samuel Kimani",
+    avatar: "/api/placeholder/40/40",
+    image: "/api/placeholder/250/180",
+    description: "The perfect chapati requires patience and the right technique. Here's how my mother taught me to make them soft and fluffy.",
+    likes: 29,
+    shares: 6,
+    time: "8 hours ago"
+  }
+];
+
 const CommunityPost = ({ post }) => {
   const [isLiked, setIsLiked] = useState(false);
 
