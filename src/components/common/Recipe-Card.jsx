@@ -1,4 +1,5 @@
 import { Heart, Clock, Users, Star, Share2 } from 'lucide-react';
+import { useState } from 'react';
 
 const RecipeCard = ({ recipe }) => {
   const [isLiked, setIsLiked] = useState(false);

@@ -1,3 +1,6 @@
+import { ChefHat } from "lucide-react";
+import { useState } from "react";
+
 export // Footer Component
 const Footer = () => {
   const [email, setEmail] = useState('');

@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import RecipeCard from '@/components/recipes/RecipeCard';
-import { Skeleton } from "@/components/ui/skeleton";
 
 export default function MyRecipes({ recipes, isLoading }) {
     return (

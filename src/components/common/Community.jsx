@@ -1,3 +1,7 @@
+import { Share2 } from "lucide-react";
+import { Heart } from "lucide-react";
+import { useState } from "react";
+
 const communityPosts = [
   {
     id: 1,
