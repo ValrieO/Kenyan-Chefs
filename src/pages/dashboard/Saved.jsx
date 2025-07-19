@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Recipe } from '@/entities/Recipe';  
-import { User } from '@/entities/User';
 import { Heart, BookOpen, Filter } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
