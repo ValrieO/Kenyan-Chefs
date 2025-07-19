@@ -26,9 +26,9 @@ const teamMembers = [
 
 export default function About() {
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="">
       {/* Hero Section */}
-      <div className="relative bg-black text-white">
+      <div className="relative h-80 bg-black text-white">
         <img 
           src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=600&fit=crop" 
           alt="A spread of delicious food"
